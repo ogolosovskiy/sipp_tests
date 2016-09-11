@@ -1,0 +1,125 @@
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+1000.0(0 ms)/1.000s   5080    1028.99 s      1000000  192.168.1.110:5060(UDP)
+
+  Call limit reached (-m 1000000), 0.936 s period  1 ms scheduler resolution
+  0 calls (limit 3000)                   Peak was 194 calls, after 94 s
+  1 Running, 4156 Paused, 947 Woken up
+  15633 dead call msg (discarded)        0 out-of-call msg (discarded)        
+  1 open sockets                        
+  0 Total echo RTP pckts 1st stream      0.000 last period RTP rate (kB/s)
+  0 Total echo RTP pckts 2nd stream      0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1000000   5269      0                  
+         100 <----------         1000000   0         0         0        
+         180 <----------         995406    0         0         0        
+         183 <----------         0         0         0         0        
+         404 <----------         0         0         0         0        
+         407 <----------         0         0         0         0        
+         408 <----------         1518      0         0         0        
+         200 <----------  E-RTD1 998482    0         0         0        
+         ACK ---------->         998482    0                            
+       Pause [      0ms]         998482                        0        
+         BYE ---------->         998482    4155      115                
+         200 <----------         998367    0         0         0        
+
+         ACK ---------->         1518      0                            
+------------------------------ Test Terminated --------------------------------
+
+
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+1000.0(0 ms)/1.000s   5080    1028.99 s      1000000  192.168.1.110:5060(UDP)
+
+  Call limit reached (-m 1000000), 0.000 s period  0 ms scheduler resolution
+  0 calls (limit 3000)                   Peak was 194 calls, after 94 s
+  1 Running, 4156 Paused, 0 Woken up
+  15633 dead call msg (discarded)        0 out-of-call msg (discarded)        
+  1 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         1000000   5269      0                  
+         100 <----------         1000000   0         0         0        
+         180 <----------         995406    0         0         0        
+         183 <----------         0         0         0         0        
+         404 <----------         0         0         0         0        
+         407 <----------         0         0         0         0        
+         408 <----------         1518      0         0         0        
+         200 <----------  E-RTD1 998482    0         0         0        
+         ACK ---------->         998482    0                            
+       Pause [      0ms]         998482                        0        
+         BYE ---------->         998482    4155      115                
+         200 <----------         998367    0         0         0        
+
+         ACK ---------->         1518      0                            
+------------------------------ Test Terminated --------------------------------
+
+
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2016-09-09	16:55:56.932098	1473429356.932098         
+  Last Reset Time        | 2016-09-09	17:13:05.930243	1473430385.930243         
+  Current Time           | 2016-09-09	17:13:05.934551	1473430385.934551         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:004000           | 00:17:09:002000          
+  Call Rate              |    0.000 cps              |  971.815 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming call created  |        0                  |        0                 
+  OutGoing call created  |        0                  |  1000000                 
+  Total Call created     |                           |  1000000                 
+  Current Call           |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |   999885                 
+  Failed call            |        0                  |      115                 
+-------------------------+---------------------------+--------------------------
+  Response Time 1        | 00:00:00:000000           | 00:00:00:006000          
+  Call Length            | 00:00:00:000000           | 00:00:00:066000          
+------------------------------ Test Terminated --------------------------------
+
+
+
+
+
+
+top - 17:15:06 up  6:14,  1 user,  load average: 5,49, 6,04, 6,09
+Tasks: 252 total,   1 running, 251 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65,3 us,  5,6 sy,  0,0 ni, 29,0 id,  0,0 wa,  0,0 hi,  0,1 si,  0,0 st
+KiB Mem : 16363852 total, 10796780 free,  3286836 used,  2280236 buff/cache
+KiB Swap: 29295612 total, 29295612 free,        0 used. 12652272 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                    
+ 6914 ogo       20   0 1780708 766652   7332 S 516,3  4,7  90:22.29 beam.smp                   
+ 4625 ogo       20   0  790888 224064  46624 S  11,3  1,4 163:32.22 compiz                     
+ 7074 ogo       20   0   95816  50524   5800 S   9,7  0,3   0:05.39 sipp                       
+ 7087 ogo       20   0   70528  25388   5976 S   9,0  0,2   0:04.78 sipp                       
+ 3251 root      20   0  679032 268304  58324 S   3,7  1,6  34:55.66 Xorg                       
+ 4945 ogo       20   0  650464 186072  70136 S   2,7  1,1   8:17.49 skype                      
+ 6511 ogo       20   0 1138904 348928 102804 S   0,7  2,1   0:52.99 firefox                    
+ 5042 ogo       20   0  548160  67176  28816 S   0,3  0,4   1:45.92 gnome-terminal-            
+ 7102 ogo       20   0   48980   4036   3312 R   0,3  0,0   0:00.01 top                        
+31203 ogo       20   0    4740   1720   1460 S   0,3  0,0   0:02.29 fsnotifier64               
+    1 root      20   0  119592   5720   3952 S   0,0  0,0   0:00.97 systemd                    
+    2 root      20   0       0      0      0 S   0,0  0,0   0:00.00 kthreadd                   
+    3 root      20   0       0      0      0 S   0,0  0,0   0:00.06 ksoftirqd/0                
+    5 root       0 -20       0      0      0 S   0,0  0,0   0:00.00 kworker/0:0H               
+    7 root      20   0       0      0      0 S   0,0  0,0   0:12.24 rcu_sched    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
